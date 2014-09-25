@@ -3,6 +3,7 @@ body {
 }
 
 #report-body,
+#contact-container,
 h2 {
   padding-top: 80px;
   margin-top: -40px;
@@ -20,6 +21,7 @@ a:link {
 
 #masthead { 
  min-height:250px;
+ padding-top: 30px;
 }
 
 #masthead h1 {
@@ -70,6 +72,9 @@ a:link {
 .well a {
   color: black;
 }
+
+
+
 
 .fa {
   font-size: 3em;
