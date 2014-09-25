@@ -6,6 +6,4 @@ made by Derek Braid [cacheflow.ca](http://cacheflow.ca)
 
 follow on Twitter @Royal_Arse
 
-## Notes
-
-Heavily under development.  Pull and contribute!
+Live Demo at http://academate.meteor.com
