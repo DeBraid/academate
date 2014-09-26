@@ -10,9 +10,6 @@ Template.homepage.rendered = function () {
   var $body   = $(document.body);
   var navHeight = $('.navbar').outerHeight(true)*1.5;
 
-
-  console.log('navHeight: -- ', navHeight);
-
   $body.scrollspy({
     target: '#leftCol',
     offset: navHeight
