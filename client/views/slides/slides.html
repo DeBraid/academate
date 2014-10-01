@@ -1,6 +1,24 @@
 <template name="slides">
-  <section id="slides-container">
-    <h1>slides</h1>
-    
-  </section>
+  <div class="container">
+    <div class="row">
+
+      <section id="slides-container">
+
+        <div class="reveal">
+          <div class="slides">
+            <section>
+              {{> summary }}
+            </section>
+            <section>
+              {{> intro }}
+            </section>
+            <section>
+              {{> methods }}
+            </section>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+  </div>
 </template>

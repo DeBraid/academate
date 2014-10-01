@@ -29,3 +29,8 @@ Template.homepage.events({
     Meteor.call('goToByScroll', targetDiv);
   }
 });
+
+// Determine if current link should be active
+UI.registerHelper('active', function(path) {
+    return curPath() == path ? 'active' : '';
+});

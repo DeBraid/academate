@@ -1,5 +1,8 @@
 <template name="layout">
   {{> header}}
   {{> yield}}
-  {{> footer}}
+  {{#if active "/"}}
+    
+    {{> footer}}
+  {{/if}}
 </template>

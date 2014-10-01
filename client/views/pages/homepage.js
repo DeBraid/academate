@@ -16,3 +16,22 @@ Template.homepage.rendered = function () {
   });
 
 };
+
+Template.homepage.helpers({
+  sections: function () {
+    return [
+      {section: 'Template.summary'},
+      {section: 'Template.intro'},
+      {section: 'Template.methods'},
+      {section: 'Template.results'},
+      {section: 'Template.conclusion'},
+      {section: 'Template.charts'},
+      {section: 'Template.references'}
+    ]
+  }
+});
+
+
+
+
+
