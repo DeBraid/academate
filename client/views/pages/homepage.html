@@ -1,178 +1,189 @@
 <template name="homepage">
-<div id="masthead">  
-  <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <h1>Boilerplate for Research Papers
-            <p class="lead">Easy to use, great presentation on desktop, tablet and mobile.</p>
-          </h1>
-        </div>
-        <div class="col-md-5">
-            <div class="well well-lg"> 
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-4">
-                  <img src="//placehold.it/300x300" class="img-responsive">
-                </div>
-                <div class="col-sm-6">
-                  <p>by Author Name</p>
-                  <p>Research and Developement</p>
-                  <p><a href="#" target="_blank">homepage</a></p>
-                  
-                  
-                  {{> social}}
-                </div>
-              </div>
-            </div>
-        </div>
-      </div> 
-  </div><!--/container-->
-</div><!--/masthead-->
 
-<!--main-->
-<div class="container">
-  <div class="row">
-      <!--left-->
-      <div class="col-md-3" id="leftCol">
-        {{> sidebar }}
-      </div><!--/left-->
-      
-      <!--right-->
-      <div id="report-body" class="col-md-9">
-        {{> summary }}
-        
-        <hr>
+    {{> masthead }}
 
-        {{> intro }}
-        
-        <hr>
-        
-        <h2 id="methods">Methods</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aspernatur officia odit sunt ipsum laudantium facilis laborum, culpa reiciendis dignissimos in deleniti dolorum officiis repellendus aliquid nam earum, commodi libero.
-        </p>
-    
+    <!--main-->
+    <div class="container">
         <div class="row">
-          <div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
-          <div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
-          <div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
+            <!--left-->
+            <div id="leftCol" class="col-md-3">
+                {{> sidebar }}
+            </div>
+            <!--/left-->
+
+            <!--right-->
+            <div id="report-body" class="col-md-9">
+                {{> summary }}
+                <hr>{{> intro }}
+                <hr>{{> methods }}
+                <hr>{{> results }}
+                <hr>{{> conclusion }}
+                <hr>{{> charts }}
+                <hr>{{> references }}
+                <hr>
+            </div>
+            <!--/right-->
         </div>
-        
-        <hr>
-        
-        <h2 id="results">Results</h2>
-        <p>
-          Images are responsive sed @mdo but sum are more fun peratis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut..</p>
-        <p>
-          Fos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut..</p>
-        
-        <hr>
-
-        
-        <h2 id="conclusion">Conclusion</h2>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.</p>
-      
-        <hr>
-      
-
-        <h2 id="charts">Charts</h2>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.</p>
-
-           <hr>
-        
-        {{> references }}
-        
-        <hr>
-      
-        </div><!--/right-->
-    </div><!--/row-->
-</div><!--/container-->
-
-
+        <!--/row-->
+    </div>
+    <!--/container-->
 
 </template>
 
 
 <template name="sidebar">
-  <ul class="nav nav-stacked" id="sidebar">
-    <li><a href="#summary">Summary</a></li>
-    <li><a href="#intro">Introduction</a></li>
-    <li><a href="#methods">Methods</a></li>
-    <li><a href="#results">Results</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-    <li><a href="#references">References</a></li>
-    <li><a href="#charts"><i class="fa fa-bar-chart"></i></a></li>
-  </ul>
+    <ul class="nav nav-stacked" id="sidebar">
+        <li><a href="#summary">Summary</a>
+        </li>
+        <li><a href="#intro">Introduction</a>
+        </li>
+        <li><a href="#methods">Methods</a>
+        </li>
+        <li><a href="#results">Results</a>
+        </li>
+        <li><a href="#conclusion">Conclusion</a>
+        </li>
+        <li><a href="#references">References</a>
+        </li>
+        <li><a href="#charts"><i class="fa fa-bar-chart"></i></a>
+        </li>
+    </ul>
 </template>
 
 <template name="summary">
-  <h2 id="summary">Summary</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non possimus veritatis atque distinctio, alias ipsam ea obcaecati quasi ad similique. Ex hic deleniti fuga tempora, blanditiis ducimus molestiae omnis officiis.
-  </p>
-  {{> summaryPanel }}
+    <section>
+        <h2 id="summary">Summary</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non possimus veritatis atque distinctio, alias ipsam ea obcaecati quasi ad similique. Ex hic deleniti fuga tempora, blanditiis ducimus molestiae omnis officiis.
+        </p>
+        {{> summaryPanel }}
+    </section>
 </template>
 
 <template name="intro">
-  <h2 id="intro">Introduction</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, cumque suscipit impedit nesciunt iste aut porro! Quis praesentium doloribus, non autem, consequuntur animi quo deleniti sunt unde laborum. Autem, minus.
-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fuga, vitae quasi quo. Odio facilis, repellendus quidem tempora? Et optio, ipsam unde eius quia distinctio quibusdam ad laboriosam nobis voluptas!
-  </p>
+    <section>
+        <h2 id="intro">Introduction</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, cumque suscipit impedit nesciunt iste aut porro! Quis praesentium doloribus, non autem, consequuntur animi quo deleniti sunt unde laborum. Autem, minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fuga, vitae quasi quo. Odio facilis, repellendus quidem tempora? Et optio, ipsam unde eius quia distinctio quibusdam ad laboriosam nobis voluptas!
+        </p>
+    </section>
 </template>
 
 <template name="summaryPanel">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="panel panel-default">
-        <div class="panel-heading"><h3>Hello.</h3></div>
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-          Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-          dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-          Aliquam in felis sit amet augue.
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Hello.</h3>
+                </div>
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Hello.</h3>
+                </div>
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-6">
-      <div class="panel panel-default">
-        <div class="panel-heading"><h3>Hello.</h3></div>
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-          Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-          dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-          Aliquam in felis sit amet augue.
-        </div>
-      </div>
-    </div>  
-  </div>
 
 </template>
 
 <template name="references">
-  <h2 id="references">References</h2>
-  <div class="row">
-    <ol>
-      <li>Smith CL, Barns MD, Chau BK, Prevalence of obesity and trends in body mass index among US children and adolescents, 1999-2010. JAMA 2012; 307: 483-90</li>
-      <li>Bruce CL, Mathers MD, Victor JD, Obesity and Insulin: A Review, 2012. Science; 411: 783-90</li>
-      <li>Jackson Michael, Diet and Exercise: Impacts on Body Mass Index, 2004-2005. JBO 2012; 307: 483-90</li>
-    </ol>
-  </div>
+    <section>
+        <h2 id="references">References</h2>
+        <div class="row">
+            <ol>
+                <li>Smith CL, Barns MD, Chau BK, Prevalence of obesity and trends in body mass index among US children and adolescents, 1999-2010. JAMA 2012; 307: 483-90</li>
+                <li>Bruce CL, Mathers MD, Victor JD, Obesity and Insulin: A Review, 2012. Science; 411: 783-90</li>
+                <li>Jackson Michael, Diet and Exercise: Impacts on Body Mass Index, 2004-2005. JBO 2012; 307: 483-90</li>
+            </ol>
+        </div>
+    </section>
+</template>
+
+<template name="masthead">
+    <section id="masthead">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>Boilerplate for Research Papers
+              <p class="lead">Easy to use, great presentation on desktop, tablet and mobile.</p>
+            </h1>
+                </div>
+                <div class="col-md-5">
+                    <div class="well well-lg">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-4">
+                                <img src="//placehold.it/300x300" class="img-responsive">
+                            </div>
+                            <div class="col-sm-6">
+                                <p>by Author Name</p>
+                                <p>Research and Developement</p>
+                                <p><a href="#" target="_blank">homepage</a>
+                                </p>
+
+
+                                {{> social}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/container-->
+    </section>
+    <!--/masthead-->
+</template>
+
+<template name="methods">
+    <section>
+        <h2 id="methods">Methods</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aspernatur officia odit sunt ipsum laudantium facilis laborum, culpa reiciendis dignissimos in deleniti dolorum officiis repellendus aliquid nam earum, commodi libero.
+        </p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="//placehold.it/300x300" class="img-responsive">
+            </div>
+            <div class="col-md-4">
+                <img src="//placehold.it/300x300" class="img-responsive">
+            </div>
+            <div class="col-md-4">
+                <img src="//placehold.it/300x300" class="img-responsive">
+            </div>
+        </div>
+    </section>
+</template>
+
+
+<template name="results">
+    <section>
+        <h2 id="results">Results</h2>
+        <p>
+            Images are responsive sed @mdo but sum are more fun peratis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut..</p>
+        <p>
+            Fos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut..</p>
+    </section>
+</template>
+
+<template name="conclusion">
+    <section>
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.</p>
+    </section>
+</template>
+
+<template name="charts">
+    <section>
+        <h2 id="charts">Charts</h2>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.</p>
+    </section>
 </template>
