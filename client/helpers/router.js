@@ -69,6 +69,11 @@ Router.map(function() {
     path: '/'
   });
 
+  this.route('slides', {
+    path: '/slides',
+    template: 'slides'
+  });
+
   this.route('content');
   this.route('contact');
 

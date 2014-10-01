@@ -91,3 +91,7 @@ a:link {
 #social-container a {
   margin: 0.25em;
 }
+
+#slides-container {
+  margin-top: 80px;  
+}
