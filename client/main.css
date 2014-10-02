@@ -82,6 +82,11 @@ a:link {
 .fa {
   font-size: 3em;
 }
+@media (max-width: 500px) {
+  .fa {
+    font-size: 2em;
+  } 
+}
 
 #social-footer > #social-container .fa {
   font-size: 0.5em !important;

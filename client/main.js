@@ -34,3 +34,21 @@ Template.homepage.events({
 UI.registerHelper('active', function(path) {
     return curPath() == path ? 'active' : '';
 });
+
+Template.header.events({
+
+  // // Fix for mobile nav bar staying when switching routes
+  // 'click .dropdown-menu, .navbar-collapse a': function () {
+
+  //   var myNav = $('.navbar-header .navbar-toggle');
+
+  //   if ( myNav.css('display') !='none' ) {
+
+  //       myNav.trigger( 'click' );
+
+  //   }
+  // },
+  'click .nav a' : function() {
+    $('.collapse.in').collapse('hide');
+  }
+});
