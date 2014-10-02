@@ -100,3 +100,7 @@
 #myCarousel .item section {
   margin-bottom: 5em;
 }
+
+#myCarousel section .panel-body {
+  color: black;
+}
