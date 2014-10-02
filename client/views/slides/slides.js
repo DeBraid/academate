@@ -7,3 +7,11 @@ Template.slides.helpers({
     ]
   }
 });
+
+// Template.slides.chooseAnswerTemplate = function () {
+//     return {
+//         'Fred': Template.fredAnswers,
+//         'Ringo': Template.ringoAnswers,
+//         'Jackson': Template.jacksonAnswers
+//     }[Template.people.nameHelper.call(this)];
+// };

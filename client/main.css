@@ -94,3 +94,14 @@ a:link {
 #slides-container {
   /*margin-top: 80px;  */
 }
+
+#myCarousel > a.carousel-control > span {
+  font-size: 5em;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 40px;
+  height: 25px;
+  margin: 5px;
+}
