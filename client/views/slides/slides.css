@@ -90,11 +90,10 @@
     font-size: 21px;
     line-height: 1.4;
   }
-
 }
 
 .carousel-inner {
-  background: rgb(208, 158, 158);
+  background: rgba(0, 67, 255, 0.5);
 }
 
 #myCarousel .item section {

@@ -19,6 +19,14 @@
                     <div class="item active">
                         <div class="container">
                             <div class="carousel-caption">
+                                {{> mastheader }}
+                                {{> mastprofile }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item active">
+                        <div class="container">
+                            <div class="carousel-caption">
                                 {{> intro }}
                             </div>
                         </div>
@@ -27,15 +35,6 @@
                         <div class="container">
                             <div class="carousel-caption">
                                 {{> summary }}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="container">
-                            <div class="carousel-caption">
-                          {{#each sections }}
-                              <h1>{{ baz }} : text test</h1>
-                          {{/each}}
                             </div>
                         </div>
                     </div>
