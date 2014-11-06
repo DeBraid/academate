@@ -4,7 +4,7 @@
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
-        Menu  
+        <i class="fa fa-arrow-down"></i>
       </button>
       
       <a id="scrollToTop" href="/" class="navbar-brand"><i class="fa fa-home"></i></a>
@@ -17,6 +17,14 @@
         <li>
           <a href="{{pathFor 'contact' }}"><i class="fa fa-envelope-square"></i></a>
         </li>
+        {{#if screenWidth }}
+        {{#each sections }}
+        <li>
+          <a href="{{ href }}">{{ section }}</a>
+        </li>
+        {{/each}}
+          
+        {{/if}}
         
       </ul>
     </nav>

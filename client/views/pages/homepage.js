@@ -1,4 +1,9 @@
 Template.homepage.rendered = function () {
+  $('#textArea .editable').editable();
+};
+
+
+Template.homepage.rendered = function () {
   /* activate sidebar */
   $('#sidebar').affix({
     offset: {

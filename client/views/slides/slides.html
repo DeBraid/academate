@@ -1,4 +1,11 @@
+
 <template name="slides">
+    {{> tester}}
+    {{> controls }}
+</template>
+
+<template name="foo">
+
 
     <div class="container">
         <div class="row">
@@ -90,3 +97,29 @@
         <span class="icon-next"></span>
     </a>
 </template>
+
+<template name="tester">
+    
+    <div class="container fill">
+<div id="myCarousel" class="carousel slide">
+  <div class="carousel-inner">
+    {{#each sections }}
+
+        <div class="{{ klass }}">
+          <div class="fill" style="background-image:url('//placehold.it/{{ url }}/FFF');">
+            <div class="container">
+              {{ section }}
+            </div>
+          </div>
+        </div>
+
+    {{/each}}
+
+  </div>
+  <div class="pull-center">
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+  </div>
+</div>
+</div>
+</template>  

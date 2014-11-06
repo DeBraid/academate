@@ -1,0 +1,10 @@
+<template name="sidebar">
+    <ul class="nav nav-stacked" id="sidebar">
+        {{#each sections }}
+            <li><a href="{{ href }}">{{ section }}</a></li>
+        {{/each}}
+
+        <li><a href="#charts"><i class="fa fa-bar-chart"></i></a></li>
+    
+    </ul>
+</template>

@@ -2,13 +2,19 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "reveal-js": {}
+      "reveal-js": {},
+      "meteor-editable": {}
     },
     "packages": {
       "reveal-js": {
         "git": "https://github.com/neo-technologies/meteor-reveal-js.git",
         "tag": "v2.6.2",
         "commit": "66ca194e49e3c48fe7d4a62ac89c7ed0d6e0814a"
+      },
+      "meteor-editable": {
+        "git": "https://github.com/davidworkman9/meteor-editable.git",
+        "tag": "v0.1.2",
+        "commit": "aefb5ab62196364c1f6a159ef63eaca138b90208"
       }
     }
   }

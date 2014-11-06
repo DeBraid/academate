@@ -1,3 +1,4 @@
+
 <template name="homepage">
 
     {{> masthead }}
@@ -30,26 +31,6 @@
 
 </template>
 
-
-<template name="sidebar">
-    <ul class="nav nav-stacked" id="sidebar">
-        <li><a href="#summary">Summary</a>
-        </li>
-        <li><a href="#intro">Introduction</a>
-        </li>
-        <li><a href="#methods">Methods</a>
-        </li>
-        <li><a href="#results">Results</a>
-        </li>
-        <li><a href="#conclusion">Conclusion</a>
-        </li>
-        <li><a href="#references">References</a>
-        </li>
-        <li><a href="#charts"><i class="fa fa-bar-chart"></i></a>
-        </li>
-    </ul>
-</template>
-
 <template name="summary">
     <section>
         <h2 id="summary">Summary</h2>
@@ -63,9 +44,9 @@
 <template name="intro">
     <section>
         <h2 id="intro">Introduction</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, cumque suscipit impedit nesciunt iste aut porro! Quis praesentium doloribus, non autem, consequuntur animi quo deleniti sunt unde laborum. Autem, minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fuga, vitae quasi quo. Odio facilis, repellendus quidem tempora? Et optio, ipsam unde eius quia distinctio quibusdam ad laboriosam nobis voluptas!
-        </p>
+
+        <p id="textArea" class="editable" data-type="textarea" data-placeholder="Enter text" data-emptytext="Enter text..." data-rows="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, cumque suscipit impedit nesciunt iste aut porro! Quis praesentium doloribus, non autem, consequuntur animi quo deleniti sunt unde laborum. Autem, minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fuga, vitae quasi quo. Odio facilis, repellendus quidem tempora? Et optio, ipsam unde eius quia distinctio quibusdam ad laboriosam nobis voluptas!</p>
+
     </section>
 </template>
 
